@@ -1,0 +1,71 @@
+	/*O seletor * seleciona cada um dos elementos do documento html*/
+	/*Zerar as propriedades de espaçamento de todos os elementos,
+	 assim temos maior controle sobre o conteúdo*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	/*Define a familia da fonte de texto*/
+	font-family: Arial, Verdana, sans-serif;
+	/*Define o tamanho de fonte padrão para textos*/
+	font-size: 16px;
+} 
+
+/*Seleciona o elemento com o id "container"*/
+#container{
+	/*Define uma cor de fundo para o elemento*/
+	background-color: #c0c0c0;
+	/*Define a largura mínima do container*/
+	min-width: 600px;
+	/*Define a largura máxima do container*/
+	max-width: 900px;
+	/*Essa propriedade vai centralizar o elemento 0 de espaçamento
+	acima e abaixo
+	mesmo espaçamento nas laterais - cálculo automático*/
+	margin: 0 auto;
+}
+/*****************************/
+/**********CABEÇALHO**********/
+/*****************************/
+/*Seleciona o elemento header*/
+header{
+	/*Define a largura*/
+	width: 100%;
+	background-color: #573258;
+	height: 110px;
+	text-align: center;
+}
+/*Seleciona o elemento h1 do que esta dentro do header*/
+header h1{
+	/*Define a cor do texto*/
+	color: #fff;
+	padding: 10px 0;
+}
+
+/***********NAV************/
+/*Seleciona o elemento NAV*/
+nav{
+	background-color: #dcb6de;
+	height: 50px;
+}
+
+nav ul li{
+	/*Permite que os elementos fiquem lado a lado*/
+	display: inline-block;
+	/*Remove os marcadores*/
+	list-style-type: none;
+}
+nav ul li a:link,
+nav ul li a:visited{
+	text-decoration: none;
+	background-color: #333;
+	color: #fff;
+	padding: 8px 10px;
+	font-weight: bolder;
+	transition: background-color 0.2s;
+}
+nav ul li a:hover,
+nav ul li a:active{
+	background-color: #999;
+}
